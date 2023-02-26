@@ -1,0 +1,82 @@
+.navbar {
+  background:#270334;
+  align-items: center;
+  display: flex;
+  justify-content:space-between;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: 0.2s;
+}
+
+
+.navbar_logo{
+font-size: 50px;
+margin-left: 30px;
+font-family: 'Tilt Warp', cursive;
+color: var(--details-color);
+font-style:oblique;
+letter-spacing: 5px;
+border-bottom: 3px solid var(--details-color);
+}
+
+.navbar_list {
+  display: flex;
+  list-style: none;
+}
+
+.navbar_item {
+  font-size: 26px;
+  font-weight:900;
+  padding: 34px;
+  border-radius: 10px;
+  color: var(--details-color);
+  background: linear-gradient(to left, #270334 34%,  #6df1d8 65%) right;
+  background-size: 300% 100%;
+
+}
+
+.navbar_item:hover  {
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    transition: ease-in 0.5s ;
+    background-position: left;
+}
+
+
+.navbar_item:focus{
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    border-left: 1px solid #161616;
+
+}
+
+
+
+
+@media screen and (max-width:1146px) {
+  .navbar_list{
+    justify-content: space-between;
+width: 100%;  }
+ 
+  .navbar_logo{
+    display: none;
+  }
+}
+
+@media screen and (max-width:870px){
+  .navbar_item{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .navbar_list{display: none;
+  }
+  .navbar{
+    justify-content: space-between;
+  }
+  .navbar_logo{
+    display: contents;
+  }
+}

@@ -1,0 +1,38 @@
+.hamburger{
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    color: var(--details-color);
+    margin-right: 30px;
+    display: none;
+}
+
+
+.navbar_mobile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  list-style: none;
+  background-color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.mobile_item{
+padding: 10px;
+background: var(--secondary-color);
+color: var(--details-color);
+font-size: 20px;
+margin: 10px;
+border-radius: 10px;
+cursor: pointer;
+}
+
+
+@media screen and (max-width:600px) {
+    .hamburger{
+         display: grid;
+    }
+}
