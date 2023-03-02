@@ -3,26 +3,24 @@
   align-items: center;
   margin-top: 50px;
   flex-wrap: wrap;
-  border-radius: 20px;
   margin-top: 200px;
   justify-content: center;
-  padding-top: 20px;
-
 }
 
 .myimage {
-  max-width: 450px;
+  max-width: 430px;
   border-radius: 20px;
-  rotate: -3deg;
+  rotate: 2deg;
   opacity: 0.6;
-  box-shadow: 2px 2px 20px var(--details-color);
-  -webkit-transition: all ease 1s;
+  -webkit-transition: all ease 0.8s;
+  margin-right: 10px;
 }
 
 .myimage:hover {
   opacity: 1;
   transition: 0.5s;
   transform: scale(1.05);
+  z-index: 200;
 }
 
 .description {
@@ -34,8 +32,13 @@
   background-color: rgb(55, 55, 55);
   z-index: 90;
   cursor: default;
-  box-shadow: 2px 2px 20px var(--details-color);
+  box-shadow: var(--box-shadow-default);
+  -webkit-transition: all ease 0.8s;
   border-radius: 5px;
+}
+
+.description:hover{
+  box-shadow: var(--box-shadow);
 }
 
 .description_title {
@@ -55,16 +58,15 @@
   color: #e5e5e5;
 }
 
-.sections{
-    line-height: 30px;
-    display: flex;
-    margin: 15px 10px;
-    text-indent: 20px;
+.sections {
+  line-height: 30px;
+  display: flex;
+  margin: 15px 10px;
+  text-indent: 20px;
 }
 
-@media  screen and (max-width:1119px) {
-  .myimage{
-      rotate: 0deg;
-      margin: 20px;
+@media screen and (max-width: 1119px) {
+  .myimage {
+    margin: 20px;
   }
 }

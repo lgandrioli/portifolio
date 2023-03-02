@@ -1,14 +1,10 @@
 import React from "react";
 import "./styles.css";
-import {
-  AiFillHtml5,
-  AiFillApi,
-  AiFillGithub,
-  AiFillFileImage,
-} from "react-icons/ai";
+import { AiFillApi, AiFillFileImage } from "react-icons/ai";
 import { DiCss3, DiJavascript, DiReact, DiNodejsSmall } from "react-icons/di";
 
 import { FiFigma } from "react-icons/fi";
+import { FaGitAlt } from "react-icons/fa";
 
 function MyTechnologies() {
   return (
@@ -16,13 +12,10 @@ function MyTechnologies() {
       <div className="tecnologies_card">
         <h2 className="tecnologies_title">Minhas Tecnologias</h2>
         <ul className="tecnologies_list">
-          <li className="tecnologies_item">
-            <AiFillHtml5 size={80} />
-            Html
-          </li>
+          <li className="tecnologies_item"></li>
           <li className="tecnologies_item">
             <DiCss3 size={80} />
-            Css
+            Styled components
           </li>
           <li className="tecnologies_item">
             <DiJavascript size={80} /> Javascript
@@ -40,8 +33,8 @@ function MyTechnologies() {
             Figma
           </li>
           <li className="tecnologies_item">
-            <AiFillGithub size={70} />
-            Git n GitHub
+            <FaGitAlt size={70} />
+            Git
           </li>
           <li className="tecnologies_item">
             <DiNodejsSmall size={70} />
@@ -53,7 +46,7 @@ function MyTechnologies() {
           </li>
         </ul>
       </div>
-      <img src="/assets/merry.jpg" alt="merry" className="tecnologies_image" />
+      <img src="/assets/Computer.png" alt="merry" className="tecnologies_image" />
     </div>
   );
 }

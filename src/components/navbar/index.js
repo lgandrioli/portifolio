@@ -43,12 +43,12 @@ function NavBar() {
       });
     }
   };
-  //colocar as outras ids [projects,socials] nos components
+  //colocar as outras ids [socials] nos components
   return (
     <>
       {show && (
         <div className="navbar">
-          <div className="navbar_logo">lgandrioli</div>
+          <div className="navbar_logo"><img src="/assets/logo.svg"/></div>
           <ul className="navbar_list">
             <li
               className="navbar_item"

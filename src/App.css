@@ -1,13 +1,17 @@
 
 *{
   /*color variants*/
---background-color: #121212;
+--background-color: #07000e;
 --secondary-color: #6df1d8 ;
 --primary-color:#270334;
 --details-color:#de0c91;
 --card-color:#373737;
---gradient-color:linear-gradient(to left, #79A7D3, #8A307F );
+--gradient-color:linear-gradient(to left, #270334 34%,  #6df1d8 65%) right;;
 font-family: "roboto";
+--box-shadow:rgba(240, 46, 170, 0.4) -5px 5px,
+rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px
+;
+--box-shadow-default: -5px 5px  rgba(240, 46, 170, 0.4);
 
 }
 
@@ -16,12 +20,19 @@ font-family: "roboto";
   background-color: var(--details-color);
 }
 
+.background_image{
+  background-size: 200% 100%;
+  display: flex;
+}
 
 .App {
-  background: var(--background-color);
+  background-color:var(--background-color);
+  width: 100%;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 

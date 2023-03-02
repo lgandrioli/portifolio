@@ -1,5 +1,5 @@
 .navbar {
-  background:#270334;
+  background:var(--primary-color);
   align-items: center;
   display: flex;
   justify-content:space-between;
@@ -11,13 +11,8 @@
 
 
 .navbar_logo{
-font-size: 50px;
-margin-left: 30px;
-font-family: 'Tilt Warp', cursive;
-color: var(--details-color);
-font-style:oblique;
-letter-spacing: 5px;
-border-bottom: 3px solid var(--details-color);
+margin:10px 30px ;
+width:150px;
 }
 
 .navbar_list {
@@ -31,7 +26,7 @@ border-bottom: 3px solid var(--details-color);
   padding: 34px;
   border-radius: 10px;
   color: var(--details-color);
-  background: linear-gradient(to left, #270334 34%,  #6df1d8 65%) right;
+  background: var(--gradient-color);
   background-size: 300% 100%;
 
 }
@@ -43,13 +38,6 @@ border-bottom: 3px solid var(--details-color);
     background-position: left;
 }
 
-
-.navbar_item:focus{
-    background-color: var(--secondary-color);
-    cursor: pointer;
-    border-left: 1px solid #161616;
-
-}
 
 
 
